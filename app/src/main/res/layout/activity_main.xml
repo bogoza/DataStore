@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <EditText
+       android:id="@+id/enterTheKey"
+       android:layout_width="150dp"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="25dp"
+       android:hint="@string/enter_key"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/enterValue"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:hint="Enter Value"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/enterTheKey"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/saveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_marginTop="15dp"
+        android:background="@color/purple_200"
+        app:layout_constraintTop_toBottomOf="@id/enterValue"
+        app:layout_constraintStart_toStartOf="@id/enterValue"
+        app:layout_constraintEnd_toEndOf="@id/enterValue"/>
+
+    <EditText
+        android:id="@+id/readValue"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:hint="Enter Key"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/saveBtn"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/readBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/purple_200"
+        app:layout_constraintTop_toBottomOf="@id/readValue"
+        app:layout_constraintStart_toStartOf="@id/readValue"
+        app:layout_constraintEnd_toEndOf="@id/readValue"
+        android:text="Read"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
